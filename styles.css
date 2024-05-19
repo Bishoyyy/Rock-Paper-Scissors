@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right bottom, rgb(0, 31, 131), rgb(192, 0, 189));
+}
+
+#wrapper{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5em;
+    border: 3px solid rgb(201, 201, 201);
+    border-radius: 2em;
+    padding: 5em 3em;
+}
+
+#game-title{
+    font-size: 3em;
+}
+
+#choose-button{
+    color: rgb(109, 153, 255);
+    font-size: 2em;
+}
+
+#choices{
+    display: flex;
+    gap: 1em;
+}
+
+#choices button{
+    padding: 0.5em 1.2em;
+    border-radius: 0.5em;
+    font-size: 3em;
+    border: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#choices button:hover{
+    background-color: white;
+    border: 3px solid rgb(109, 153, 255);
+    transform: scale(1.05);
+}
+
+#player-choice,
+#computer-choice{
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+#result-display{
+    font-size: 1.8em;
+    border: 3px solid rgb(109, 153, 255);
+    border-radius: 0.5em;
+    padding: 10px 50px;
+    font-weight: 600;
+}
